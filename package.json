@@ -1,0 +1,30 @@
+{
+  "name": "gas-mock",
+  "version": "0.0.1",
+  "description": "A library for mocking Apps Script objects in a Node environment",
+  "main": "./dist/index.js",
+  "types": "./types/global.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikey-petty/Gas-Mock.git"
+  },
+  "keywords": [
+    "appscript",
+    "node"
+  ],
+  "author": "Michael Petty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikey-petty/Gas-Mock/issues"
+  },
+  "homepage": "https://github.com/mikey-petty/Gas-Mock#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
