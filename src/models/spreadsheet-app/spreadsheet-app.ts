@@ -1,4 +1,5 @@
 import { Spreadsheet } from '../spreadsheet/interfaces/spreadsheet';
+import { MockSpreadsheet } from '../spreadsheet/spreadsheet';
 
 /**
  * Class used to Mock the fuctionality of the SpreadsheetApp
@@ -16,8 +17,8 @@ export class MockSpreadsheetApp implements SpreadsheetApp {
    * @memberof MockSpreadsheetApp
    */
   openByUrl(url: string): Spreadsheet {
-    console.log(`Opening spreadsheet: ${url}`);
-    return {};
+    console.log(`TODO: Open spreadsheet logic: ${url}`);
+    return new MockSpreadsheet();
   }
 }
 
