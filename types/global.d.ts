@@ -1,10 +1,10 @@
-
+import { Spreadsheet } from '../src/models/spreadsheet/interfaces/spreadsheet';
 declare global {
-  interface FakeSpreadsheetApp {
-    openByUrl(url: string): {}
+  interface SpreadsheetApp {
+    openByUrl(url: string): Spreadsheet;
   }
 
-  var FakeSpreadsheetApp: FakeSpreadsheetApp;
+  var FakeSpreadsheetApp: SpreadsheetApp;
 }
 
-export { }
+export {};
