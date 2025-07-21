@@ -9,4 +9,5 @@ export default {
     ...tsJestTransformCfg,
   },
   testPathIgnorePatterns: ['/node_modules', '/dist', '/build'],
+  preset: 'ts-jest',
 };
