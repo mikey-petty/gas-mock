@@ -3,13 +3,16 @@
   "version": "0.0.1",
   "description": "A library for mocking Apps Script objects in a Node environment",
   "main": "./dist/index.js",
-  "types": "./types/global.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "npx eslint .",
     "test": "npx jest --config=jest.config.js",
     "build": "npx tsc",
     "ci": "npm run lint && npm run test"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikey-petty/Gas-Mock.git"
@@ -36,8 +39,10 @@
     "prettier": "^3.4.2",
     "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.21.0"
+    "typescript-eslint": "^8.21.0",
+    "typescript-transform-paths": "^3.5.5"
   },
   "dependencies": {
     "@types/google-apps-script": "^1.0.95"

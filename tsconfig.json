@@ -2,14 +2,18 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "ES2022",
+    "outDir": "./dist",
     "moduleResolution": "bundler",
     "declaration": true,
     "declarationMap": true,
-    "outDir": "./dist",
+    "noEmit": false,
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["ES2022"]
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true
   },
   "include": ["src", "types/global.d.ts"],
   "exclude": ["node_modules", "dist"]
