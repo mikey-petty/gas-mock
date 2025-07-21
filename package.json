@@ -5,9 +5,10 @@
   "main": "./dist/index.js",
   "types": "./types/global.d.ts",
   "scripts": {
-    "test": "npx jest --config=jest.config.js",
     "lint": "npx eslint .",
-    "build": "npx tsc"
+    "test": "npx jest --config=jest.config.js",
+    "build": "npx tsc",
+    "ci": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
