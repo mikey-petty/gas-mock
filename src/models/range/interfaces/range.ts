@@ -15,6 +15,6 @@ export interface Range {
   setValues(values: string[][]): void; // Sets the values for the range.
   getNumColumns(): number; // Returns the number of columns in the range.
   getNumRows(): number; // Returns the number of rows in the range.
-  getSheet(): Sheet; // Returns the sheet the range is on.
+  // getSheet(): Sheet; // Returns the sheet the range is on.
   isBlank(): boolean; // Returns true if the range is blank.
 }

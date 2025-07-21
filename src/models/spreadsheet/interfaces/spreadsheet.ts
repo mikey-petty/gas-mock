@@ -1,1 +1,3 @@
-export interface Spreadsheet {}
+export interface Spreadsheet {
+  getName(): string;
+}
